@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<object class="fabricaDAO.TramaEthernet">
+	<void property="id">
+		<long>1766</long>
+	</void>
+	<void property="macDestino">
+		<string>00:0c:6e:b5:4a:db</string>
+	</void>
+	<void property="macOrigen">
+		<string>00:30:b8:c9:63:31</string>
+	</void>
+	<void property="sensor">
+		<object class="sensorEthernet.Sensor">
+			<void property="idSensor">
+				<long>2</long>
+			</void>
+		</object>
+	</void>
+	<void property="tamanioPaquete">
+		<int>82</int>
+	</void>
+	<void property="timestamp">
+		<object class="java.util.Date">
+			<long>1212694657185</long>
+		</object>
+	</void>
+	<void property="tipoTrama">
+		<short>2048</short>
+	</void>
+	<void property="txtTipoTrama">
+		<string>DOD IP</string>
+	</void>
+</object>
+ 
