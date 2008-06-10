@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+	<msg>
+		<id>Identificador</id>
+		<txt></txt>
+	</msg>
+		<msg>
+		<id>Dirección MAC destino</id>
+		<txt></txt>
+	</msg>
+	<msg>
+		<id>Dirección MAC Origen</id>
+		<txt></txt>
+	</msg>
+	<msg>
+		<id>Objeto sensor</id>
+		<txt></txt>
+	</msg>
+	<msg>
+		<id>Identificador del sensor</id>
+		<txt></txt>
+	</msg>
+	<msg>
+		<id>Tamaño del paquete</id>
+		<txt></txt>
+	</msg>
+	<msg>
+		<id>Fecha y hora</id>
+		<txt></txt>
+	</msg>
+	<msg>
+		<id>Identificador tipo trama</id>
+		<txt></txt>
+	</msg>
+	<msg>
+		<id>Description tipo trama</id>
+		<txt></txt>
+	</msg>
+</messages>
