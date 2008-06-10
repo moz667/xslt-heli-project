@@ -8,17 +8,20 @@
 	</xsl:template>
 	
 	<xsl:template match="object">
-		<b><xsl:value-of select="@class" /></b><br />
-		<xsl:apply-templates select="*" /><br />
+		<ul>
+		<li><xsl:value-of select="@class" /></li>
+		<xsl:apply-templates select="*" />
+		</ul>
 	</xsl:template>
 	
 	<xsl:template match="void">
-		<b>
-			<xsl:call-template name="propdesc">
-				<xsl:with-param name="id"><xsl:value-of select="@property" /></xsl:with-param>
-			</xsl:call-template>
-		</b>
-		<br />
-		<xsl:apply-templates select="*" /><br />
+		<ul>
+			<li>
+				<xsl:call-template name="propdesc">
+					<xsl:with-param name="id"><xsl:value-of select="@property" /></xsl:with-param>
+				</xsl:call-template>
+			</li>
+		<xsl:apply-templates select="*" />
+		</ul>
 	</xsl:template>
 </xsl:stylesheet>
