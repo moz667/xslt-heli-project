@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+	<p id="id">Identificador</p>
+	<p id="macDestino">Dirección MAC destino</p>
+	<p id="macOrigen">Dirección MAC origen</p>
+	<p id="sensor">Objeto sensor</p>
+	<p id="idSensor">Identificador del sensor</p>
+	<p id="tamanioPaquete">Tamaño del paquete</p>
+	<p id="timestamp">Fecha y hora</p>
+	<p id="tipoTrama">Identificador tipo trama</p>
+	<p id="txtTipoTrama">Description tipo trama</p>
+</properties>
