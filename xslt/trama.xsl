@@ -4,7 +4,30 @@
 	<xsl:include href="inc/basic.xsl"/>
 	
 	<xsl:template match="/">
-		<xsl:apply-templates select="*" />
+		<html>
+			<head>
+				<title>Transformacion trama</title>
+			</head>
+		
+			<body>
+				<table>
+				<tr>
+					<th colspan="3"></th>
+				</tr>
+				<tr>
+					<td>
+						<xsl:apply-templates select="//void[@property='macDestino']" />	
+					</td>
+					<td>
+						<xsl:apply-templates select="//void[@property='macOrigen']" />
+					</td>
+					<td>
+
+					</td>
+				</tr>
+				</table>
+			</body>
+		</html>
 	</xsl:template>
-	
+
 </xsl:stylesheet>
