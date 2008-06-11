@@ -25,4 +25,17 @@
 			<xsl:with-param name="id"><xsl:value-of select="$ppdescs/p[@id=$id]" /></xsl:with-param>
 		</xsl:call-template>
 	</xsl:template>
-</xsl:stylesheet>
+	
+	<xsl:template name="dategreg">
+		<xsl:param name="datelong"/>
+		<span id="id1"></span>
+		<script language="javascript1.2">
+			var dDate = new Date();
+			dDate.setTime(<xsl:value-of select="$datelong" />);
+			alert(dDate);
+			document.getElementById("id1").innerHTML = dDate;
+		</script>
+
+	</xsl:template>
+	
+	</xsl:stylesheet>
