@@ -28,14 +28,18 @@
 	
 	<xsl:template name="dategreg">
 		<xsl:param name="datelong"/>
-		<span id="id1"></span>
+		
+		<xsl:variable name="idAux"><xsl:value-of select="generate-id()" /></xsl:variable>
+		
+		<span>
+			<xsl:attribute name="id"><xsl:value-of select="$idAux" /></xsl:attribute>
+		</span>
+		
 		<script language="javascript1.2">
 			var dDate = new Date();
 			dDate.setTime(<xsl:value-of select="$datelong" />);
-			alert(dDate);
-			document.getElementById("id1").innerHTML = dDate;
+			document.getElementById("<xsl:value-of select="$idAux" />").innerHTML = dDate;
 		</script>
-
 	</xsl:template>
 	
 	</xsl:stylesheet>
