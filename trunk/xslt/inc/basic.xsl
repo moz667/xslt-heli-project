@@ -41,5 +41,32 @@
 			document.getElementById("<xsl:value-of select="$idAux" />").innerHTML = dDate;
 		</script>
 	</xsl:template>
+
+	<xsl:template match="object">
+		<ul>
+			<li><xsl:value-of select="@class" /></li>
+			
+			<!-- Los objetos de tipo date vienen con formato epoch -->
+			<xsl:if test="@class = 'java.util.Date'">
+				<xsl:call-template name="dategreg">
+					<xsl:with-param name="datelong"><xsl:value-of select="long" /></xsl:with-param>
+				</xsl:call-template>
+			</xsl:if>
+			
+			<xsl:if test="not (@class = 'java.util.Date')">
+				<xsl:apply-templates select="*" />
+			</xsl:if>
+		</ul>
+	</xsl:template>
 	
-	</xsl:stylesheet>
+	<xsl:template match="void">
+		<b>
+			<xsl:call-template name="propdesc">
+				<xsl:with-param name="id"><xsl:value-of select="@property" /></xsl:with-param>
+			</xsl:call-template>
+		</b>
+		
+		<xsl:apply-templates />
+	</xsl:template>
+	
+</xsl:stylesheet>
