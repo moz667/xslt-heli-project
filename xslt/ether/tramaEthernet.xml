@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/xsl" href="Ethernet.xsl"?>
+<java version="1.6.0" class="java.beans.XMLDecoder"> 
+ <object class="fabricaDAO.TramaEthernet"> 
+  <void property="datos"> 
+   <array class="byte" length="46"> 
+    <void index="0"> 
+     <byte>66</byte> 
+    </void> 
+    <void index="1"> 
+     <byte>66</byte> 
+    </void> 
+    <void index="2"> 
+     <byte>3</byte> 
+    </void> 
+    <void index="8"> 
+     <byte>-128</byte> 
+    </void> 
+    <void index="11"> 
+     <byte>23</byte> 
+    </void> 
+    <void index="12"> 
+     <byte>-17</byte> 
+    </void> 
+    <void index="13"> 
+     <byte>-87</byte> 
+    </void> 
+    <void index="14"> 
+     <byte>108</byte> 
+    </void> 
+    <void index="20"> 
+     <byte>-128</byte> 
+    </void> 
+    <void index="23"> 
+     <byte>23</byte> 
+    </void> 
+    <void index="24"> 
+     <byte>-17</byte> 
+    </void> 
+    <void index="25"> 
+     <byte>-87</byte> 
+    </void> 
+    <void index="26"> 
+     <byte>108</byte> 
+    </void> 
+    <void index="28"> 
+     <byte>-128</byte> 
+    </void> 
+    <void index="29"> 
+     <byte>17</byte> 
+    </void> 
+    <void index="32"> 
+     <byte>20</byte> 
+    </void> 
+    <void index="34"> 
+     <byte>2</byte> 
+    </void> 
+    <void index="36"> 
+     <byte>15</byte> 
+    </void> 
+   </array> 
+  </void> 
+  <void property="id"> 
+   <long>7704</long> 
+  </void> 
+  <void property="idSensor"> 
+   <long>5</long> 
+  </void> 
+  <void property="macDestino"> 
+   <string>01:80:c2:00:00:00</string> 
+  </void> 
+  <void property="macOrigen"> 
+   <string>00:17:ef:a9:6c:00</string> 
+  </void> 
+  <void property="tamanioPaquete"> 
+   <int>60</int> 
+  </void> 
+  <void property="tipoTrama"> 
+   <short>38</short> 
+  </void> 
+  <void property="txtTipoTrama"> 
+   <string>No identificado</string> 
+  </void> 
+  <void property="vendedorDestino"> 
+   <string>Desconocido</string> 
+  </void> 
+  <void property="vendedorOrigen"> 
+   <string>Blade</string> 
+  </void> 
+  <void property="version"> 
+   <string>IEEE 802.3</string> 
+  </void> 
+ </object> 
+</java>
